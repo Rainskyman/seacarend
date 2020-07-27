@@ -1,0 +1,5 @@
+/* miniprogram/pages/Itday/Itday.wxss */
+.Itday{
+  width: 100%;
+  height: 100%;
+}

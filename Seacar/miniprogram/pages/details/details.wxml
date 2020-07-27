@@ -1,0 +1,80 @@
+<view class="details">
+  <view class="swiperB">
+    <swiper indicator-dots='true' indicator-active-color='#ff5777' autoplay='true' circular='true' interval='2000' class='swiper'>
+      <block wx:for="{{swimg}}" wx:key="index">
+        <swiper-item>
+          <image class="swiper-image" src="{{item}}" mode='widthFix' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="miaosu">
+  <text>大牌正品，时尚设计，舒适体验，低价抢购1折起，心动不如行动！APP专享，实惠不断!</text>
+  </view>
+
+
+  <view class="details-box">
+    <view class="price">
+      <view class="one">
+        <text>99</text>
+        <text>199</text>
+      </view>
+      <view class="two">
+        <view wx:if="{{hasact}}">
+          <text>限时秒杀</text>
+          <text>99</text>
+        </view>
+        <view wx:else>
+          暂无活动
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+
+  <view class="tobuy">
+    <view class="goucar">
+      <view class="m">
+        <image src="../../images/cars.png" mode='widthFix' />
+      </view>
+      <view class="n">
+        <text>购物车</text>
+      </view>
+    </view>
+
+    <view class="goucar">
+      <view class="m">
+        <image src="../../images/heart.png" mode='widthFix' />
+      </view>
+      <view class="n">
+        <text>收藏</text>
+      </view>
+    </view>
+    <view class="tobybox">
+      <view class="tobybox-l">加入购物车</view>
+      <view class="tobybox-r">立即购买</view>
+    </view>
+
+
+
+  </view>
+
+  <view class="sizebox" bindtap="choosesize">
+    <view wx:if="{{false}}">
+      <text>{{sized}}</text>
+    </view>
+    <view wx:else class="sizeitem">
+      <text>{{sized}}</text>
+    </view>
+  </view>
+  <view class="sizebox" bindtap="choosecolor">
+    <text>{{colored}}</text>
+  </view>
+
+</view>
+
+<van-action-sheet show="{{ show }}" actions="{{ actions }}" bind:close="onClose" bind:select="onSelect" />
+<van-action-sheet show="{{ show2 }}" actions="{{ actions2 }}" bind:close="onClose2" bind:select="onSelect2" />

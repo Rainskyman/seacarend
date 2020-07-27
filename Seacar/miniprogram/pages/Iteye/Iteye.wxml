@@ -1,0 +1,6 @@
+<view class="Itday">
+  <buyways shoplist="{{shoplist}}" wtype="2" />
+
+  <loadingmore hasmore="{{ishas}}" />
+
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+          "van-notice-bar": "../../../miniprogram_npm/@vant/weapp/notice-bar/index",
+          "buyways":"/components/buyways/buyways",
+          "loadingmore":"/components/loadingmore/loadingmore"
+  }
+}

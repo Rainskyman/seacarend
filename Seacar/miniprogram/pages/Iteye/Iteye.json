@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "buyways": "/components/buyways/buyways",
+    "loadingmore": "/components/loadingmore/loadingmore"
+  }
+}

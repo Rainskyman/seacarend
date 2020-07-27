@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/details/details",
+    "pages/me/me",
+    "pages/dynamic/dynamic",
+    "pages/alls/alls",
+    "pages/mycar/mycar",
+    "pages/Itday/Itday",
+    "pages/Iteye/Iteye",
+    "pages/Itsea/Itsea",
+    "pages/Itsec/Itsec"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "SeaCar",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tab/home.png",
+        "selectedIconPath": "/images/tab/home_s.png"
+      },
+      {
+        "pagePath": "pages/alls/alls",
+        "text": "分类",
+        "iconPath": "/images/tab/fl.png",
+        "selectedIconPath": "/images/tab/fl_s.png"
+      },
+      {
+        "pagePath": "pages/dynamic/dynamic",
+        "text": "动态",
+        "iconPath": "/images/tab/sun.png",
+        "selectedIconPath": "/images/tab/sun_s.png"
+      },
+      {
+        "pagePath": "pages/mycar/mycar",
+        "text": "动态",
+        "iconPath": "/images/tab/toby.png",
+        "selectedIconPath": "/images/tab/toby_s.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人",
+        "iconPath": "/images/tab/me.png",
+        "selectedIconPath": "/images/tab/me_s.png"
+      }
+    ]
+  }
+}

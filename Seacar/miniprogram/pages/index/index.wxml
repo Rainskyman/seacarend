@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="index">
+  <view class="notice">
+    <van-notice-bar backgroundColor="#000000" color="white" text="{{a}}" />
+  </view>
+  <!-- 轮播 -->
+  <view class="swiperB">
+    <swiper indicator-dots='true' indicator-active-color='#ff5777' autoplay='true' circular='true' interval='3000' class='swiper'>
+      <block wx:for="{{swimg}}" wx:key="index">
+        <swiper-item>
+          <image class="swiper-image" src="{{item}}" mode='widthFix' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 轮播 -->
+
+  <!-- 功能栏 -->
+  <view class="recommend">
+    <block wx:for="{{recommend}}" wx:key="index">
+      <navigator url="{{item.url}}">
+        <view class="recommendbox" bindtap="{{item.way}}">
+          <view class="imgbox">
+            <image src="{{item.imgurl}}"></image>
+          </view>
+          <view class="textbox">
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+  <!-- 功能栏 -->
+  <view class="twobuy">
+    <buyways shoplist="{{shoplist}}" />
+  </view>
+
+  <loadingmore hasmore="{{ishas}}" />
+
+</view>

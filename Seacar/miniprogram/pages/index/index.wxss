@@ -1,0 +1,67 @@
+/**index.wxss**/
+
+.index {
+  width: 100%;
+  height: 100%;
+}
+
+/* 轮播 */
+.swiperB {
+  width: 100%;
+  height: 360rpx;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+}
+/* 轮播 */
+
+
+/* 功能栏 */
+.recommend {
+  width: 100%;
+  background: #f8f8f8;
+  padding:10rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.recommendbox {
+  width: 180rpx;
+  height: 200rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.recommendbox .imgbox {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.recommendbox image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.recommendbox .textbox {
+  color: red;
+  font-size: 26rpx;
+}
+/* 功能栏 */
+
+
+
+.twobuy{
+  width: 100%;
+}
+
+

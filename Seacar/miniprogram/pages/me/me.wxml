@@ -1,0 +1,65 @@
+<view class='header'>
+  <view class='avatar'>
+    <!-- <image src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKXvl6j6jCicia7O3KE95Hib1zHOjczYDcyQSkibOcdzyEGeViamDH5TDicaPLWXmeFljh33wGxmvsDCf9g/132" /> -->
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class='login-info'>
+    <view class='login' bindtap="loginMemory">此页面暂未开发</view>
+    <view class='phone'>
+      <image src="/images/meimg/phone.png" /> 暂无绑定手机号
+    </view>
+  </view>
+  <view class='arrow'>
+    <image src="/images/meimg/arrow-right.png" />
+  </view>
+</view>
+
+
+<view class='info'>
+  <view class='info-money info-item'>
+    <view>
+      <text class='count'>0.00</text>
+      <text>元</text>
+    </view>
+    <view>我的余额</view>
+  </view>
+  <view class='info-discount info-item'>
+    <view>
+      <text class='count'>0</text>
+      <text>个</text>
+    </view>
+    <view>我的优惠</view>
+  </view>
+  <view class='info-pointer info-item'>
+    <view>
+      <text class='count'>0</text>
+      <text>分</text>
+    </view>
+    <view>我的积分</view>
+  </view>
+</view>
+
+<view class="shouhou">
+  <view class='shoitem'>
+    <view>待付款</view>
+  </view>
+  <view class='shoitem'>
+    <view>待收货</view>
+  </view>
+  <view class='shoitem'>
+    <view>待评价</view>
+  </view>
+  <view class='shoitem'>
+    <view>购买记录</view>
+  </view>
+</view>
+
+
+<view class='list-view'>
+  <block wx:for="{{orderList}}" wx:key="index">
+    <view class='list-item' bindtap="{{item.way}}">
+      <image src="/images/meimg/{{item.icon}}" />
+      <text>{{item.info}}</text>
+    </view>
+  </block>
+</view>

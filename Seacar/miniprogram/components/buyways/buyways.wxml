@@ -1,0 +1,49 @@
+<view class="buyways">
+  <view class="ways" wx:if="{{wtype==1}}">
+    <view class="w-l com" bindtap="showhot">
+      <image src="../../images/wy/fire.png"></image>
+      <text>火热</text>
+    </view>
+    <view class="w-y com" bindtap="showpin">
+      <image src="../../images/wy/many.png"></image>
+      <text>一起拼团</text>
+    </view>
+  </view>
+  <!-- 火热 -->
+  <!-- {{shoplist[0].price}} -->
+
+  <block wx:for="{{5}}" wx:key="index">
+    <navigator url="/pages/details/details">
+      <view class="hot">
+        <view class="hotlist">
+          <view class="hotlist-l">
+            <image src="https://t00img-c.yangkeduo.com/goods/images/2019-12-08/552002205acad53baf7c5a28fd3bb7cd.jpeg"></image>
+          </view>
+          <view class="hotlist-r">
+            <view class="desc">
+              <text>大牌正品，时尚设计，舒适体验，低价抢购1折起，心动不如行动！APP专享，实惠不断!</text>
+            </view>
+            <view class="ensure">
+              <text>正品保障</text>
+            </view>
+            <view class="price">
+              <text>包邮</text>
+              <text>99</text>
+              <text>199</text>
+            </view>
+            <view class="people" wx:if="{{ispin}}">
+              <view class="use">
+                <text>拼家</text>
+              </view>
+              <view class="head">
+                <block wx:for="{{6}}" wx:key="index">
+                  <image style="left:{{40*index}}rpx" src="https://t00img-c.yangkeduo.com/goods/images/2019-12-08/552002205acad53baf7c5a28fd3bb7cd.jpeg"></image>
+                </block>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>

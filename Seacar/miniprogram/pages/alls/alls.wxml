@@ -1,0 +1,29 @@
+<view class="fenl">
+  <view class="fenl-l">
+    <scroll-view scroll-y="true" style="height:100%;">
+      <block wx:for="{{leftdata}}" wx:index="index">
+        <view class="left-it">
+          <text>{{item}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="fenl-r">
+    <scroll-view scroll-y="true" style="height:100%;">
+      <block wx:for="{{3}}" wx:key="index">
+      
+          <view class="shoptitle">推荐</view>
+          <view class="shoplist">
+            <block wx:for="{{7}}">
+              <view class="item">
+                <image src="../../images/s1.png"></image>
+                <text>裙子</text>
+              </view>
+            </block>
+          </view>
+       
+      </block>
+    </scroll-view>
+
+  </view>
+</view>
